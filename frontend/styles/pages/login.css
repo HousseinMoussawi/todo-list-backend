@@ -1,0 +1,15 @@
+.auth{
+    background-color:white ;
+    border-radius: 30px;
+    padding: 20px;
+    gap: 20px;
+    width: fit-content;
+    height: fit-content;
+    box-shadow:0 5px 10px black;
+}
+
+.main{
+    background-color: #04004F;
+    width: 100vw;
+    height: 100vh;
+}

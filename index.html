@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="frontend/styles/common/colors.css" />
+    <link rel="stylesheet" href="frontend/styles/common/queries.css" />
+    <link rel="stylesheet" href="frontend/styles/common/utilities.css" />
+    <link rel="stylesheet" href="frontend/styles/pages/index.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="flex flex-between nav">
+        <img src="frontend/assets/todo logo.jpg" alt="" class="logo" />
+        <button>LOGOUT</button>
+      </nav>
+    </header>
+    <main class="main flex center column bg_primary">
+      <section class="flex center column todo_section">
+        <form action="" class="add-todo flex center bg_secondary">
+          <input
+          class="todo_input"
+            type="text"
+            id="todo-input"
+            placeholder="what do you wanna do?"
+          />
+          <input type="submit" name="todo submit" id="todo-submit" class="todo_submit" value="Add task !"/>
+        </form>
+        <div class="todos flex align-center column bg_secondary" id="todos">
+          <div class="flex center todo_card">
+            <div class="">logo</div>
+            <div class="flex flex-between info txt_primary">
+              <h2 class="descritption">sdadasdqqd</h2>
+              <input type="radio" class="done_task" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
