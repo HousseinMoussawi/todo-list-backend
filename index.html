@@ -10,29 +10,48 @@
     <title>Document</title>
   </head>
   <body>
+
+
+    <div class="flex center popup column hidden" id="add-popup">
+      <div class="flex center column">
+        <div class="flex column center input">
+          <label for="amount" class="txt_primary">Task Description</label>
+          <input type="text" name="amount" id="description-input">
+        </div>
+
+        <div class="flex center popup-buttons">
+          <button class="bg_secondary txt_secondary bold" id="create-button">Create</button>
+          <button class="bg_secondary txt_secondary bold" id="cancel-button">Cancel</button>
+        </div>
+      </div>
+    </div>
+
+
+
     <header class="header">
-      <nav class="flex flex-between nav">
+      <nav class="flex flex-between align-center nav">
         <img src="frontend/assets/todo logo.jpg" alt="" class="logo" />
-        <button>LOGOUT</button>
+        <button class="bg_secondary flex center txt_secondary">Logout</button>
       </nav>
     </header>
     <main class="main flex center column bg_primary">
       <section class="flex center column todo_section">
-        <form action="" class="add-todo flex center bg_secondary">
+        <form action="" class="add-todo flex center bg_white">
+          <input class="todo_input txt_primary" type="text" id="todo-input"
+          placeholder="what do you wanna do?" />
           <input
-          class="todo_input"
-            type="text"
-            id="todo-input"
-            placeholder="what do you wanna do?"
+            type="submit"
+            name="todo submit"
+            id="todo-submit"
+            class="todo_submit bg_secondary txt_secondary"
+            value="Add task !"
           />
-          <input type="submit" name="todo submit" id="todo-submit" class="todo_submit" value="Add task !"/>
         </form>
-        <div class="todos flex align-center column bg_secondary" id="todos">
-          <div class="flex center todo_card">
-            <div class="">logo</div>
-            <div class="flex flex-between info txt_primary">
-              <h2 class="descritption">sdadasdqqd</h2>
-              <input type="radio" class="done_task" />
+        <div class="todos flex align-center column bg_white" id="todos">
+          <div class="flex center todo_card bg_secondary txt_secondary">    
+            <div class="flex flex-between info txt_secondary">
+              <h2 class="descritption">Buy groceries</h2>
+              <input type="checkbox" class="done_task" />
             </div>
           </div>
         </div>

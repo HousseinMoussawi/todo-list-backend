@@ -23,12 +23,27 @@
     width: 100%;    
 }
 
+.nav button{
+    height: 50px;
+    padding: 10px;
+    border-radius: 30px;
+    font-size: 1.5rem;
+    margin: 0 10px;
+    font-weight: bold;
+    border: solid 5px #0B2E2A;
+}
+
+.nav button:hover{
+    cursor: pointer;
+}
+
+
 .todo_section{
     gap: 20px;
     width:70%;
     height:fit-content;
     border-radius: 30px;
-    box-shadow:0 5px 10px black;
+    
 }
 
 .add-todo{
@@ -36,6 +51,7 @@
     padding: 20px;
     width:100%;
     height:150px;
+    box-shadow:0 5px 10px black;
 }
 
 .add-todo input{
@@ -44,13 +60,22 @@
     border-radius: 30px;
 }
 
+
 .todo_input{
+    border:solid 5px #0B2E2A;
     padding: 20px;
     width: 80%;
+    font-weight: bold;
 }
 
 .todo_submit{
+    border:solid 5px #0B2E2A;
     width: 25%;
+    font-weight: bold;
+}
+
+.todo_submit:hover{
+    cursor: pointer;
 }
 
 .info{
@@ -61,14 +86,59 @@
     padding: 30px;
     border-radius: 30px;
     width: 100%;
+    box-shadow:0 5px 10px black;
     height: fit-content;
     min-height: 700px;
 }
 
 .todo_card{
     border-radius: 30px;
-    box-shadow: 0 5px 10px black;
+    border:solid 5px #0B2E2A;
     width: 100%;
     height: 70px;
     gap: 20px;
 }
+
+.done_task{
+    width: 30px;
+}
+
+.popup {
+    position: fixed;
+    background-color: #00000071;
+    height: 100vh;
+    width: 100vw;
+  }
+  
+  .popup > div {
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    width: 30%;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .input {
+    min-width: 100px;
+    flex-grow: 1;
+    max-width: 50% - 20px;
+  }
+  
+  .input > input {
+    border: 5px solid #0B2E2A;
+    border-radius: 30px;
+    padding: 0 10px;
+    height: 40px;
+    width:300px;
+  }
+
+  .popup-buttons{
+    gap: 20px;
+  }
+
+  .popup-buttons button{
+    height: 40px;
+    border: solid 5px #0B2E2A;
+    border-radius: 30px;
+  }

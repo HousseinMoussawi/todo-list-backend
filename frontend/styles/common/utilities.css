@@ -34,3 +34,11 @@
 .justify-center{
     justify-content:center;
 }
+
+.hidden{
+    display: none;
+}
+
+.row{
+    flex-direction: row;
+}

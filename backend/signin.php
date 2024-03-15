@@ -11,7 +11,7 @@ where email=? or username=?');
 $query->bind_param('ss', $email, $username);
 $query->execute();
 $query->store_result();
-$query->bind_result($id, $username, $email, $hashed_password);
+$query->bind_result($id, $username, $email, $hashed_password,$score);
 $query->fetch();
 $num_rows = $query->num_rows();
 
@@ -23,8 +23,11 @@ if ($num_rows == 0) {
         $response['user_id'] = $id;
         $response['username'] = $username;
         $response['email'] = $email;
+        $response['score'] = $score;
     } else {
         $response['status'] = "incorrect credentials";
     }
 }
 echo json_encode($response);
+
+
