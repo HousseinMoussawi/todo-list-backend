@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../styles/common/utilities.css">
-    <link rel="stylesheet" href="../styles/pages/index.css">
+    <link rel="stylesheet" href="../styles/common/colors.css">
+    <link rel="stylesheet" href="../styles/pages/login.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-    <main class="main flex center">
-        <form action="" method="post" class="flex center column auth">
-            <input type="text" id ="user-login">
-            <input type="text" id="user-password">
-            <h3>don't have an account? <a href="signup.html" id="signup-link">signup</a></h3>
-            <input type="submit" name="login" id="login-btn" value="login">
+    <main class="main flex center bg_primary">
+        <form action="https://localhost/todo_list_db/signup.php" method="post" class="flex center column auth">
+            <input type="text" id ="user-login" placeholder="email or username">
+            <input type="text" id="user-password" placeholder="password">
+            <h3>don't have an account? <a class="txt_primary signup"  href="signup.html" id="signup-link">signup</a></h3>
+            <input type="submit" name="login" id="login-btn" class="bg_secondary txt_secondary" value="login" class="flex center">
             
         </form>
     </main>

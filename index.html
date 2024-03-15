@@ -2,6 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
     <link rel="stylesheet" href="frontend/styles/common/colors.css" />
     <link rel="stylesheet" href="frontend/styles/common/queries.css" />
     <link rel="stylesheet" href="frontend/styles/common/utilities.css" />
@@ -10,23 +14,23 @@
     <title>Document</title>
   </head>
   <body>
-
-
     <div class="flex center popup column hidden" id="add-popup">
       <div class="flex center column">
         <div class="flex column center input">
           <label for="amount" class="txt_primary">Task Description</label>
-          <input type="text" name="amount" id="description-input">
+          <input type="text" name="amount" id="description-input" />
         </div>
 
         <div class="flex center popup-buttons">
-          <button class="bg_secondary txt_secondary bold" id="create-button">Create</button>
-          <button class="bg_secondary txt_secondary bold" id="cancel-button">Cancel</button>
+          <button class="bg_secondary txt_secondary bold" id="create-button">
+            Create
+          </button>
+          <button class="bg_secondary txt_secondary bold" id="cancel-button">
+            Cancel
+          </button>
         </div>
       </div>
     </div>
-
-
 
     <header class="header">
       <nav class="flex flex-between align-center nav">
@@ -37,8 +41,12 @@
     <main class="main flex center column bg_primary">
       <section class="flex center column todo_section">
         <form action="" class="add-todo flex center bg_white">
-          <input class="todo_input txt_primary" type="text" id="todo-input"
-          placeholder="what do you wanna do?" />
+          <input
+            class="todo_input txt_primary"
+            type="text"
+            id="todo-input"
+            placeholder="what do you wanna do?"
+          />
           <input
             type="submit"
             name="todo submit"
@@ -48,14 +56,19 @@
           />
         </form>
         <div class="todos flex align-center column bg_white" id="todos">
-          <div class="flex center todo_card bg_secondary txt_secondary">    
-            <div class="flex flex-between info txt_secondary">
+          <div class="flex center todo_card bg_secondary txt_secondary">
+            <div class="flex flex-between align-center info txt_secondary">
               <h2 class="descritption">Buy groceries</h2>
-              <input type="checkbox" class="done_task" />
+              <i class="fa-solid fa-x"></i>
             </div>
           </div>
         </div>
       </section>
     </main>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="frontend/scripts/APIs.js"></script>
+    <script src="frontend/scripts/authentication.js"></script>
+    <script src="frontend/scripts/index.js"></script>
+    <script src="frontend/scripts/localstorage.js"></script>
   </body>
 </html>

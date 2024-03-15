@@ -33,3 +33,8 @@ taskCards.forEach((card) => {
     })
 };
 
+const generateTaskCard = (task) => {
+    const{id, description, status} = task;
+
+
+}

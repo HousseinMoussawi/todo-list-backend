@@ -17,10 +17,12 @@
 .header{
     padding: 20px;
     width: 100%;
+    box-shadow: 0 5px 10px black;
 }
 
 .nav{
     width: 100%;    
+    
 }
 
 .nav button{
@@ -47,6 +49,7 @@
 }
 
 .add-todo{
+    gap: 20px;
     border-radius: 30px;
     padding: 20px;
     width:100%;
@@ -126,7 +129,7 @@
   }
   
   .input > input {
-    border: 5px solid #0B2E2A;
+    border: 5px solid #0b2e2a;
     border-radius: 30px;
     padding: 0 10px;
     height: 40px;
@@ -141,4 +144,8 @@
     height: 40px;
     border: solid 5px #0B2E2A;
     border-radius: 30px;
+  }
+
+  .fa-x:hover {
+    cursor: pointer;
   }
