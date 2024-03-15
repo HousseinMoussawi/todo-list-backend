@@ -10,13 +10,16 @@
 </head>
 <body>
     <main class="main flex center bg_primary">
-        <form action="https://localhost/todo_list_db/signup.php" method="post" class="flex center column auth">
+        <div action="" class="flex center column auth">
             <input type="text" id ="user-login" placeholder="email or username">
             <input type="text" id="user-password" placeholder="password">
             <h3>don't have an account? <a class="txt_primary signup"  href="signup.html" id="signup-link">signup</a></h3>
             <input type="submit" name="login" id="login-btn" class="bg_secondary txt_secondary" value="login" class="flex center">
             
-        </form>
+        </div>
     </main>
+    <script src="../scripts/APIs.js"></script>
+    <script src="../scripts/authentication.js"></script>
+    <script src="../scripts/todo.js"></script>
 </body>
 </html>

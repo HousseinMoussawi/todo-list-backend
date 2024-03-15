@@ -1,14 +1,13 @@
 <?php
 include('connection.php');
 
-$username = $_POST['username'];
-$email = $_POST['email'];
+$user = $_POST['user'];
 $password = $_POST['password'];
 
-$query = $mysqli->prepare('select *
-from users
-where email=? or username=?');
-$query->bind_param('ss', $email, $username);
+
+
+$query= $mysqli->prepare('select * from users where username=? or email=?');
+$query->bind_param('ss', $user, $user);
 $query->execute();
 $query->store_result();
 $query->bind_result($id, $username, $email, $hashed_password,$score);
